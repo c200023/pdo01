@@ -1,6 +1,7 @@
 <?php
   session_start();
-  require_onece './functions.php';
+  require("functions.php");
+  //require_onece './functions.php';
 
   $name = $_SESSION['name'];
   $email = $_SESSION['email'];
@@ -22,7 +23,7 @@ try{
 
     $stmt->execute(); 
 
-    $pdo = null;  /*[DB切断]; */
+    $dbh = null;  /*[DB切断]; */
 
 }catch (PDOException $e){ 
 
