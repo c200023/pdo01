@@ -1,5 +1,6 @@
 <?php
   session_start();
+  require_onece './functions.php';
 
   $name = $_SESSION['name'];
   $email = $_SESSION['email'];
